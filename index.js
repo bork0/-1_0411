@@ -8,23 +8,23 @@ let secondVariable;
 firstVariable = `I'm the first one`;
 secondVariable = 2;
 
-let newDiv = document.createElement('div');
-let newParagraph = document.createTextNode(`firstVariable is ` + firstVariable);
-newDiv.appendChild(newParagraph);
+let newParagraph = document.createElement('p');
+let newText = document.createTextNode(`firstVariable is ` + firstVariable);
+newParagraph.appendChild(newParagraph);
 
-let anotherNewDiv = document.createElement('div');
-let anotherNewParagraph = document.createTextNode(`secondVariable is ` + secondVariable);
-anotherNewDiv.appendChild(anotherNewParagraph);
+let anotherNewParagraph = document.createElement('p');
+let anotherNewText = document.createTextNode(`secondVariable is ` + secondVariable);
+anotherNewParagraph.appendChild(anotherNewParagraph);
 
 firstVariable = secondVariable;
 
-let equalVariablesDiv = document.createElement('div');
-let equalVariables = document.createTextNode(`firstVariable is ` + firstVariable + ` and the secondVariable is ` + secondVariable);
-equalVariablesDiv.appendChild(equalVariables);
+let equalVariablesParagraph = document.createElement('p');
+let equalVariablesText = document.createTextNode(`firstVariable is ` + firstVariable + ` and the secondVariable is ` + secondVariable);
+equalVariablesParagraph.appendChild(equalVariables);
 
-document.body.appendChild(newDiv);
-document.body.appendChild(anotherNewDiv);
-document.body.appendChild(equalVariablesDiv);
+document.body.appendChild(newParagraph);
+document.body.appendChild(anotherNewParagraph);
+document.body.appendChild(equalVariablesParagraph);
 
 // fourth task
 let isAdult = confirm('Are you at least 18 years of age?');
