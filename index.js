@@ -10,17 +10,17 @@ secondVariable = 2;
 
 let newParagraph = document.createElement('p');
 let newText = document.createTextNode(`firstVariable is ` + firstVariable);
-newParagraph.appendChild(newParagraph);
+newParagraph.appendChild(newText);
 
 let anotherNewParagraph = document.createElement('p');
 let anotherNewText = document.createTextNode(`secondVariable is ` + secondVariable);
-anotherNewParagraph.appendChild(anotherNewParagraph);
+anotherNewParagraph.appendChild(anotherNewText);
 
 firstVariable = secondVariable;
 
 let equalVariablesParagraph = document.createElement('p');
 let equalVariablesText = document.createTextNode(`firstVariable is ` + firstVariable + ` and the secondVariable is ` + secondVariable);
-equalVariablesParagraph.appendChild(equalVariables);
+equalVariablesParagraph.appendChild(equalVariablesText);
 
 document.body.appendChild(newParagraph);
 document.body.appendChild(anotherNewParagraph);
